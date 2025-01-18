@@ -1,0 +1,12 @@
+django
+pip-tools
+python-decouple
+psycopg2-binary
+djangorestframework
+markdown
+django-filter
+PyJWT
+celery
+redis
+cryptography
+django-channels

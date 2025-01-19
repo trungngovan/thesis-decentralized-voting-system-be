@@ -10,3 +10,5 @@ celery
 redis
 cryptography
 django-channels
+drf-spectacular
+django-cors-headers

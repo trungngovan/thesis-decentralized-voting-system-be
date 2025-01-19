@@ -4,37 +4,137 @@
 #
 #    pip-compile requirements/development.in
 #
+amqp==5.3.1
+    # via kombu
 asgiref==3.8.1
-    # via django
+    # via
+    #   django
+    #   django-cors-headers
+attrs==24.3.0
+    # via
+    #   jsonschema
+    #   referencing
+billiard==4.2.1
+    # via celery
 build==1.2.2.post1
     # via pip-tools
+celery==5.4.0
+    # via -r requirements/development.in
+certifi==2024.12.14
+    # via requests
+cffi==1.17.1
+    # via cryptography
+charset-normalizer==3.4.1
+    # via requests
 click==8.1.8
-    # via pip-tools
+    # via
+    #   celery
+    #   click-didyoumean
+    #   click-plugins
+    #   click-repl
+    #   pip-tools
+click-didyoumean==0.3.1
+    # via celery
+click-plugins==1.1.1
+    # via celery
+click-repl==0.3.0
+    # via celery
+cryptography==44.0.0
+    # via -r requirements/development.in
 django==5.1.5
     # via
     #   -r requirements/development.in
+    #   django-cors-headers
     #   django-filter
     #   djangorestframework
+    #   drf-spectacular
+django-channels==0.7.0
+    # via -r requirements/development.in
+django-cors-headers==4.6.0
+    # via -r requirements/development.in
 django-filter==24.3
     # via -r requirements/development.in
 djangorestframework==3.15.2
+    # via
+    #   -r requirements/development.in
+    #   drf-spectacular
+drf-spectacular==0.28.0
     # via -r requirements/development.in
+idna==3.10
+    # via requests
+inflection==0.5.1
+    # via drf-spectacular
+jsonschema==4.23.0
+    # via drf-spectacular
+jsonschema-specifications==2024.10.1
+    # via jsonschema
+kombu==5.4.2
+    # via celery
 markdown==3.7
     # via -r requirements/development.in
+oauthlib==3.2.2
+    # via requests-oauthlib
 packaging==24.2
     # via build
 pip-tools==7.4.1
     # via -r requirements/development.in
+prompt-toolkit==3.0.48
+    # via click-repl
 psycopg2-binary==2.9.10
+    # via -r requirements/development.in
+pycparser==2.22
+    # via cffi
+pyjwt==2.10.1
     # via -r requirements/development.in
 pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
+python-dateutil==2.9.0.post0
+    # via celery
 python-decouple==3.8
     # via -r requirements/development.in
+pyyaml==6.0.2
+    # via drf-spectacular
+redis==5.2.1
+    # via -r requirements/development.in
+referencing==0.36.1
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
+requests==2.32.3
+    # via
+    #   django-channels
+    #   requests-oauthlib
+requests-oauthlib==2.0.0
+    # via django-channels
+rpds-py==0.22.3
+    # via
+    #   jsonschema
+    #   referencing
+six==1.17.0
+    # via
+    #   django-channels
+    #   python-dateutil
 sqlparse==0.5.3
     # via django
+typing-extensions==4.12.2
+    # via referencing
+tzdata==2024.2
+    # via
+    #   celery
+    #   kombu
+uritemplate==4.1.1
+    # via drf-spectacular
+urllib3==2.3.0
+    # via requests
+vine==5.1.0
+    # via
+    #   amqp
+    #   celery
+    #   kombu
+wcwidth==0.2.13
+    # via prompt-toolkit
 wheel==0.45.1
     # via pip-tools
 
